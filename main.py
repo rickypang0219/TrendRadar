@@ -4404,8 +4404,6 @@ class NewsAnalyzer:
 
     def _has_notification_configured(self) -> bool:
         """检查是否配置了任何通知渠道"""
-        print("DISCORD URL", CONFIG["DISCORD_WEBHOOK_URL"])
-        print("FEISHU URL", CONFIG["FEISHU_WEBHOOK_URL"])
         return any(
             [
                 CONFIG["DISCORD_WEBHOOK_URL"],
